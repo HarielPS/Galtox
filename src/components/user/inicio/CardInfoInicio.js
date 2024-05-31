@@ -1,8 +1,11 @@
+'use client'
+import { useRouter } from "next/navigation";
 import React from "react";
 
-export default function CardInfoInicio({title,numPrin,icon, numText,text}) {
+export default function CardInfoInicio({title,numPrin,icon, numText,text,link}) {
+  const router = useRouter();
   return (
-    <div className="col-12 md:col-6 lg:col-3">
+    <div className="col-12 md:col-6 lg:col-3" onClick={()=> router.push(link)}>
       <div className="surface-0 shadow-2 p-3 border-1 border-50 border-round">
         <div className="flex justify-content-between mb-3">
           <div>

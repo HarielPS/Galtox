@@ -15,6 +15,7 @@ export default function Page() {
           icon={"pi-desktop"}
           numText={""}
           text={""}
+          link={"portafolio"}
         />
         <CardInfoInicio
           title={"Proyectos en fondeo"}
@@ -22,6 +23,7 @@ export default function Page() {
           icon={"pi-users"}
           numText={""}
           text={""}
+          link={"portafolio"}
         />
         <CardInfoInicio
           title={"Proyectos terminados"}
@@ -29,6 +31,7 @@ export default function Page() {
           icon={"pi-flag-fill"}
           numText={""}
           text={""}
+          link={"historial"}
         />
         <CardInfoInicio
           title={"Ganancias totales"}
@@ -36,6 +39,7 @@ export default function Page() {
           icon={"pi-money-bill"}
           numText={""}
           text={""}
+          link={"wallet"}
         />
       </div>
       <div className="grid" style={{ height: "calc(100% - 240px)" }}>
