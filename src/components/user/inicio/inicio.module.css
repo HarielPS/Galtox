@@ -1,0 +1,33 @@
+/* components/ColorSection.module.css */
+.container {
+    height: 100vh; /* Altura completa de la ventana */
+    position: relative; /* Establece un contexto de posición para las tarjetas */
+  }
+  
+  .topSection {
+    height: 20%; /* Una quinta parte de la altura */
+    background-color: #3498db; /* Color de la parte superior */
+  }
+  
+  .cardsContainer {
+    position: absolute; /* Posiciona las tarjetas de forma absoluta */
+    top: 20%; /* Coloca las tarjetas justo después de la sección superior */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    margin: 0 10px;
+    width: 200px; /* Ancho de las tarjetas */
+    height: 300px; /* Altura de las tarjetas */
+  }
+  
+  .bottomSection {
+    height: 80%; /* Cuatro quintas partes de la altura */
+    background-color: #2ecc71; /* Color de la parte inferior */
+  }
+  

@@ -10,10 +10,19 @@ export default function layout({ children }) {
     setVisible(!visible);
   };
   return (
-    <div style={{ height: "100vh", width:"100vw" }}>
-      <Navbar  handleVisible={handleVisible}/>
+    <div style={{ height: "100vh", width: "100vw" }}>
+      <Navbar handleVisible={handleVisible} />
       <SideBar visible={visible | false} handleVisible={handleVisible} />
-      <div style={{ padding: "2rem" }}>{children}</div>
+      <div
+        style={{
+          background: "#EEF3F7",
+          width: "100%",
+          height: "100%",
+          paddingTop: "60px",
+        }}
+      >
+        <div style={{ padding: "60px",width:"100%", height:"100%", overflow:"hidden"}}>{children}</div>
+      </div>
     </div>
   );
 }
