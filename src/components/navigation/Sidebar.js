@@ -59,7 +59,7 @@ export default function SideBar({ visible, handleVisible }) {
                                             <path d="M21.1245 10.1789L24.8545 9.794L22.4862 7.09967H19.7628L21.1245 10.1789Z" fill="var(--primary-color)" />
                                             <path d="M12.1762 10.1789L8.4462 9.794L10.8145 7.09967H13.5378L12.1762 10.1789Z" fill="var(--primary-color)" />
                 </svg>*/}
-                    <Image src="/logo.enc" alt="Logo" width={55} height={55} />
+                    <Image src="/logo2.png" alt="Logo" width={55} height={55} />
                     <span className="font-semibold text-2xl text-primary">
                       Galtox
                     </span>

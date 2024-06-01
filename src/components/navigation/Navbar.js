@@ -13,7 +13,7 @@ const Navbar = ({ handleVisible }) => {
         <i className={"pi mr-2 pi-bars"} style={{color:"#FFF"}} onClick={handleVisible}></i>
       </div>
       <div className={styles.right}>
-        <Image src="/logo.enc" alt="Logo" width={40} height={40} />
+        <Image src="/logo2.png" alt="Logo" width={40} height={40} />
       </div>
     </div>
   );
