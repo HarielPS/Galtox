@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "npm install $NPM_FLAGS && npm run build",
+    "prebuild": "npm install $NPM_FLAGS",
+    "build": "react-scripts build",
     "start": "next start",
     "lint": "next lint"
   },
