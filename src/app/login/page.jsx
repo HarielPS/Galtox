@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from 'react';
 import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
@@ -35,7 +35,7 @@ export default function Login() {
     }
     setFormErrors(errors);
     return Object.keys(errors).length === 0;
-  }
+  };
 
   const connectMetamask = async () => {
     try {
@@ -44,28 +44,22 @@ export default function Login() {
         await window.ethereum.request({ method: 'eth_requestAccounts' });
         const accounts = await web3.eth.getAccounts();
         const walletAddress = accounts[0];
-        
+
         const existingUser = await findUserIdByWalletAddress(walletAddress);
-  
+
         if (existingUser) {
           const docSnapshot = await db.collection('usuarios').doc(existingUser).get();
           const userData = docSnapshot.data();
           const storedPassword = userData.password;
-          
+
           if (storedPassword === formValues.confirmPassword) {
             setUserId(existingUser);
             window.location.href = "/user/dashboard/inicio";
           } else {
             alert("La contraseña no coincide");
-            if (window.ethereum && window.ethereum.disconnect) {
-              await window.ethereum.disconnect();
-            }
           }
         } else {
           alert("No se encontró ninguna cuenta asociada a esta billetera.");
-          if (window.ethereum && window.ethereum.disconnect) {
-            await window.ethereum.disconnect();
-          }
         }
       } else {
         console.error("MetaMask extension is not installed.");
@@ -74,7 +68,7 @@ export default function Login() {
       console.error("Error connecting to MetaMask", error);
     }
   };
-  
+
   const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormValues({ ...formValues, [name]: value });
