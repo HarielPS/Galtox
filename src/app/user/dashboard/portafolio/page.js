@@ -2,11 +2,9 @@ import React from "react";
 import { Card } from "primereact/card";
 import styles from "../../../../components/user/inicio/inicio.module.css";
 import CardInfoInicio from "@/components/user/inicio/CardInfoInicio";
-import ChartTest from "@/components/user/inicio/chartTest";
 import ChartTest2 from "@/components/user/inicio/ChartTest2";
 import CardInfoPortafolio from "@/components/user/portafolio/CardInfoPortafolio";
 import TablaPortafolio from "@/components/user/portafolio/TablaPortafolio";
-import ChartBarPortafolio from "@/components/user/portafolio/chartBarPortafolio";
 export default function Page() {
   return (
     <div

@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "primereact/card";
 import styles from "../../../../components/user/inicio/inicio.module.css";
 import CardInfoInicio from "@/components/user/inicio/CardInfoInicio";
-import ChartTest from "@/components/user/inicio/chartTest";
+import ChartTest from "../../../../components/user/inicio/ChartTest";
 import ChartTest2 from "@/components/user/inicio/ChartTest2";
 
 export default function Page() {
