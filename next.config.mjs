@@ -14,6 +14,9 @@ const nextConfig = {
   images: {
     domains: ['primefaces.org'],
   },
+
+  // Especifica el directorio de construcción
+  distDir: 'build', // Asegúrate de que este directorio coincida con el que has configurado en Netlify
 };
 
 export default nextConfig;
