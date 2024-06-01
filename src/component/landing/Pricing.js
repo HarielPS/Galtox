@@ -8,6 +8,7 @@ import Typography from '@mui/material/Typography';
 export default function HighlightSection() {
   return (
     <Box
+    id="highlights"
       sx={{
         py: 6,
         textAlign: 'center',
