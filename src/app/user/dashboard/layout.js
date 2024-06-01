@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Menubar } from "primereact/menubar";
 import Navbar from "@/components/navigation/Navbar";
 
-export default function layout({ children }) {
+export default function Layout({ children }) {
   const [visible, setVisible] = useState(false);
   const handleVisible = () => {
     setVisible(!visible);
