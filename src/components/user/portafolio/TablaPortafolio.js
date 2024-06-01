@@ -13,6 +13,7 @@ import { Tag } from 'primereact/tag';
 import { TriStateCheckbox } from 'primereact/tristatecheckbox';
 import { CustomerService } from './CustomerService';
 import "primereact/resources/primereact.min.css";
+import Image from 'next/image';
 
 
 export default function TablaPortafolio() {
@@ -109,11 +110,12 @@ export default function TablaPortafolio() {
   const countryBodyTemplate = (rowData) => {
     return (
       <div className="flex align-items-center gap-2">
-        <img
+        <Image
+          width = {10} 
+          height = {10}
           alt="flag"
-          src="https://primefaces.org/cdn/primereact/images/flag/flag_placeholder.png"
+          src="/flag.png"
           className={`flag flag-${rowData.country.code}`}
-          style={{ width: '24px' }}
         />
         <span>{rowData.country.name}</span>
       </div>
@@ -125,10 +127,11 @@ export default function TablaPortafolio() {
 
     return (
       <div className="flex align-items-center gap-2">
-        <img
+        <Image
           alt={representative.name}
           src={`https://primefaces.org/cdn/primereact/images/avatar/${representative.image}`}
-          width="32"
+          width={32}
+          height={32}
         />
         <span>{representative.name}</span>
       </div>
@@ -138,10 +141,11 @@ export default function TablaPortafolio() {
   const representativesItemTemplate = (option) => {
     return (
       <div className="flex align-items-center gap-2">
-        <img
+        <Image
           alt={option.name}
           src={`https://primefaces.org/cdn/primereact/images/avatar/${option.image}`}
-          width="32"
+          width={32}
+          height={32}
         />
         <span>{option.name}</span>
       </div>

@@ -13,6 +13,7 @@ import MenuItem from '@mui/material/MenuItem';
 import Drawer from '@mui/material/Drawer';
 import MenuIcon from '@mui/icons-material/Menu';
 import ToggleColorMode from './ToggleColorMode';
+import Image from 'next/image';
 
 const logoStyle = {
   width: '140px',
@@ -92,7 +93,9 @@ function AppAppBar({ mode, toggleColorMode }) {
                 px: 0,
               }}
             >
-              <img
+              <Image
+                width={500}
+                height={300}
                 src= "/logo.png" 
                 style={logoStyle}
                 alt="logo of sitemark"

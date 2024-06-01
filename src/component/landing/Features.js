@@ -9,10 +9,8 @@ import Grid from '@mui/material/Grid';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
-import ChevronRightRoundedIcon from '@mui/icons-material/ChevronRightRounded';
-import DevicesRoundedIcon from '@mui/icons-material/DevicesRounded';
-import EdgesensorHighRoundedIcon from '@mui/icons-material/EdgesensorHighRounded';
-import ViewQuiltRoundedIcon from '@mui/icons-material/ViewQuiltRounded';
+
+import Image from 'next/image';
 // icons
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import ShieldIcon from '@mui/icons-material/Shield';
@@ -256,12 +254,12 @@ export default function Features() {
       overflow: 'hidden', // Oculta cualquier contenido que se desborde del contenedor
     }}
   >
-    <img
-      src="https://www.shutterstock.com/image-photo/mature-business-woman-manager-holding-600nw-2356242049.jpg"
+    <Image
+      src="/five.webp"
       alt="Imagen de muestra"
+      width={700} // Especifica el ancho en píxeles
+      height={900}
       style={{
-        width: '100%', // Ajusta el ancho de la imagen al 100% del contenedor
-        height: '100%', // Ajusta el alto de la imagen al 100% del contenedor
         objectFit: 'contain', // Ajusta la imagen para que se contenga dentro del contenedor sin recortarse
       }}
     />
