@@ -10,12 +10,23 @@
   },
   "dependencies": {
     "chart.js": "^4.4.3",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@metamask/sdk-react": "^0.20.2",
+    "@mui/icons-material": "^5.15.19",
+    "@mui/material": "^5.15.19",
+    "@mui/system": "^5.15.15",
+    "@react-native-async-storage/async-storage": "^1.23.1",
+    "@walletconnect/web3-provider": "^1.8.0",
+    "firebase": "^10.12.2",
     "next": "14.2.3",
     "primeflex": "^3.3.1",
     "primeicons": "^7.0.0",
     "primereact": "^10.6.6",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "react-router-dom": "^6.23.1",
+    "web3": "^4.9.0"
   },
   "devDependencies": {
     "eslint": "^8",
