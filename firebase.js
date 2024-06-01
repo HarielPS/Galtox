@@ -4,8 +4,6 @@ import 'firebase/compat/auth';
 import 'firebase/compat/firestore';
 
 // Verificar que las variables de entorno se carguen correctamente
-console.log('API_KEY:', process.env.API_KEY);
-
 const firebaseConfig = {
   apiKey: process.env.API_KEY,
   authDomain: process.env.AUTH_DOMAIN,
