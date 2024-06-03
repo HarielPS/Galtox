@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { Chart } from 'primereact/chart';
 
-export default function ChartTest() {
+export default function ChartHistorial() {
     const [chartData, setChartData] = useState({});
     const [chartOptions, setChartOptions] = useState({});
 
@@ -39,7 +39,7 @@ export default function ChartTest() {
 
     return (
         <div className="card flex justify-content-center">
-            <Chart type="doughnut" data={chartData} options={chartOptions} className="w-full md:w-30rem" />
+            <Chart type="doughnut" data={chartData} options={chartOptions} className="w-full " />
         </div>
     )
 }
